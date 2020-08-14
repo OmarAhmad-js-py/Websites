@@ -1,0 +1,182 @@
+html{
+    width: 100%;
+}
+/* Generic VIEW */
+body{
+
+    font-family: 'Asap', sans-serif;
+    color: white;
+    background-color: #ebebeb
+}
+
+
+
+.container{
+    
+    min-height: 500px;
+    max-width: 1024px;
+    margin: 0px auto ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 140px;
+    
+
+}
+
+
+.header-container{   
+    background-color: rgb(49, 49, 49);
+    min-height: 100px;
+    position: fixed;
+    width: 100%;
+    
+}
+
+header{
+    max-width: 1024px;
+    min-height: 100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.col{
+    background-color: rgb(32, 236, 168);
+    width:30%;
+    margin-bottom: 40px;
+
+    
+}
+
+.hide-d{
+    display: none;
+}
+
+
+.col img{
+    width: 100%;
+    height: auto;
+}
+.col p{
+   
+    font-size: 0.875;
+    padding: 20px 25px;
+    line-height: 1.25rem;
+}
+
+.col p::first-line {
+    font-weight: 700;
+    
+
+}
+ nav a{
+    border: 1px solid rgb(255, 255, 255);
+    background-color: transparent;
+    color: white;
+    padding: 11px 25px;
+    font-size: 16px;
+    margin-left: 20px;
+    cursor: pointer;
+    text-decoration: none;
+ }
+
+
+
+ 
+.bold{
+    font-weight: 700;
+}
+
+.mob-wrapper{
+    display: none;
+}
+/*Tablet view*/
+@media (max-width: 768px){
+
+    .col{
+        width: 45%;
+    }
+    
+    .hide-d{
+        display: block;
+    }
+
+    .header-container{
+        display: block;
+        text-align: center;
+        position: relative;
+        
+    }
+
+    .container{
+        padding-top: 40px;
+    }
+    
+    nav{
+    display: none;
+    }
+
+    nav a{
+        display: block;
+    }
+
+
+     .logo{
+        padding: 40px 0;
+     }
+     
+
+
+     .navbutton{
+         margin-left: 0;
+     }
+
+     .mob-wrapper{
+        display: block;
+        padding-right: 30px;
+    }
+    .mob-nav{
+        display: none;
+        position: absolute;
+        padding-top: 10px; 
+    }
+    .mob-nav a{
+        display: block;
+        background-color: cornflowerblue;
+        color: white;
+        padding: 11px 25px;
+        font-size: 16px;
+        margin-left: -70px;
+        text-decoration: none;
+        text-align: center;
+     }
+     
+} 
+    
+
+
+
+
+
+
+
+/* mobile view */
+@media (max-width:400px ){
+    
+
+
+
+    .col{
+        width: 100%;
+    }
+
+
+    .hide-mobile{
+        display: none;
+    }
+
+    
+
+}
